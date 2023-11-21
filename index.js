@@ -6,7 +6,7 @@ import * as UserController from './controllers/UserController.js'
 import * as PostController from './controllers/PostController.js'
 import {check} from "express-validator";
 
-mongoose.connect('mongodb+srv://admin:6w6w6w@clustersn.anmxqvc.mongodb.net/blog?retryWrites=true&w=majority',
+mongoose.connect('mongo',
     ).then(() => {
         console.log('DB OK');
     }).catch((err) => {
